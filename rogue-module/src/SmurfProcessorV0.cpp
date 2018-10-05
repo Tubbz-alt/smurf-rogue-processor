@@ -76,26 +76,6 @@ void SmurfProcessorV0::acceptFrame ( ris::FramePtr frame ) {
    queue_.push(frame);
 }
 
-//void SmurfProcessorV0::frameToBuffer( ris::FramePtr frame, uint8_t * const buffer) {
-//   uint8_t *dest = buffer;
-//   rogue::interfaces::stream::Frame::iterator iter = frame->beginRead();
-//   rogue::interfaces::stream::Frame::iterator  end = frame->endRead();
-//   while ( iter != end ) {
-//   
-//      //  Get contigous size
-//      auto size = iter.remBuffer();
-//   
-//      // Get the data pointer from current position
-//      auto *src = iter.ptr();
-//   
-//      // Copy some data
-//      memcpy(dest, src, size);
-//   
-//      // Update destination pointer and source iterator
-//      dest   += size;
-//      iter   += size;
-//   }
-//}
 void SmurfProcessorV0::frameToBuffer( ris::FramePtr frame, uint8_t * const buffer) {
    ris::Frame::BufferIterator src;
    uint8_t *dst = buffer;
@@ -106,10 +86,6 @@ void SmurfProcessorV0::frameToBuffer( ris::FramePtr frame, uint8_t * const buffe
 
 }
 
-//void SmurfProcessorV0::bufferToFrame( uint8_t * const buffer, ris::FramePtr frame ) {
-//   uint8_t *src = buffer;
-//   rogue::interfaces::stream::Frame::iterator iter = frame->beginRead();
-//}
 void SmurfProcessorV0::bufferToFrame( uint8_t * const buffer, ris::FramePtr frame ) {
    uint8_t *src = buffer;
    rogue::interfaces::stream::Frame::iterator iter = frame->beginRead();
@@ -146,7 +122,6 @@ void SmurfProcessorV0::processFrame( ris::FramePtr frame ) {
 
    std::copy(&input[0], &input[headerSize], output);
 
-//FIXME: only processing blockOffset2 and blockOffset3
 // process frame:
 //   int16 -> double
 //   unwrap
