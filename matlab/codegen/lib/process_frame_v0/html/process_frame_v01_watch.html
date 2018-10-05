@@ -1,0 +1,751 @@
+<body>
+<script src="resources/eml_report_loadable_data.js"></script>
+<table class="grid" id="watchtable" summary="This table describes the types of variables used in the current function." cellspacing="0" cellpadding="0">
+<thead>
+<tr>
+<th id="blank" scope="col">&nbsp;</th>
+<th id="order" scope="col"><div class="d1"><div class="d2"><a href="#">Order</a></div></div></th>
+<th id="expr" scope="col"><div class="d1"><div class="d2"><a href="#">Variable</a></div></div></th>
+<th id="exprtype" scope="col"><div class="d1"><div class="d2"><a href="#">Type</a></div></div></th>
+<th id="watchsize" scope="col"><div class="d1"><div class="d2"><a href="#">Size</a></div></div></th>
+<th id="watchclass" scope="col"><div class="d1"><div class="d2"><a href="#">Class</a></div></div></th>
+<th id="watchcomplex" scope="col"><div class="d1"><div class="d2"><a href="#">Complex</a></div></div></th>
+<th id="signed" scope="col"><div class="d1"><div class="d2"><a href="#">Signedness</a></div></div></th>
+<th id="wl" scope="col"><div class="d1"><div class="d2"><a href="#">WL</a></div></div></th>
+<th id="fl" scope="col"><div class="d1"><div class="d2"><a href="#">FL</a></div></div></th>
+</tr>
+</thead>
+<tbody onmouseover="watchMouseOver(event);" onmouseout="watchMouseOut(event);" onclick="watchClick(event);">
+<tr class="haschild var type1" id="S2T1">
+<td rowspan="2" class="collapsible"><a class="collapsed" href="#" /></td>
+<td>1</td>
+<td id="" rowspan="2" class="expr collapsible-alt"><a href="#">frame_out</a></td>
+<td>Output</td><td class="watchsize" id="21">1 x 1024</td>
+<td class="watchclass">embedded.fi</td>
+<td class="watchcomplex">No</td>
+<td class="signed">Signed</td>
+<td class="wl">32</td>
+<td class="fl">28</td>
+</tr>
+<tr class="expand-child var type1" id="S2T1C"><td style="display:none;" />
+<td colspan="7" style="display:none;">
+<table class="detail">
+<tr><td class="fimathheader" colspan="4">Local fimath:</td></tr>
+<tr><th>Round mode:</th><td>nearest</td>
+<th>Sum mode:</th><td>FullPrecision</td>
+</tr>
+<tr><th>Overflow mode:</th><td>wrap</td>
+<th>Maximum sum word length:</th><td>65535</td>
+</tr>
+<tr><th>Product mode:</th><td>FullPrecision</td>
+<th>Cast before sum:</th><td>Yes</td>
+</tr>
+<tr><th>Maximum product word length:</th><td>65535</td>
+<th></th><td></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr class="haschild var type1" id="S3T1">
+<td rowspan="2" class="collapsible"><a class="collapsed" href="#" /></td>
+<td>2</td>
+<td id="" rowspan="2" class="expr collapsible-alt"><a href="#">frame_in</a></td>
+<td>Input</td><td class="watchsize" id="21">1 x 1024</td>
+<td class="watchclass">embedded.fi</td>
+<td class="watchcomplex">No</td>
+<td class="signed">Signed</td>
+<td class="wl">32</td>
+<td class="fl">28</td>
+</tr>
+<tr class="expand-child var type1" id="S3T1C"><td style="display:none;" />
+<td colspan="7" style="display:none;">
+<table class="detail">
+<tr><td class="fimathheader" colspan="4">Local fimath:</td></tr>
+<tr><th>Round mode:</th><td>nearest</td>
+<th>Sum mode:</th><td>FullPrecision</td>
+</tr>
+<tr><th>Overflow mode:</th><td>wrap</td>
+<th>Maximum sum word length:</th><td>65535</td>
+</tr>
+<tr><th>Product mode:</th><td>FullPrecision</td>
+<th>Cast before sum:</th><td>Yes</td>
+</tr>
+<tr><th>Maximum product word length:</th><td>65535</td>
+<th></th><td></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr class="var type1" id="S4T2">
+<td id="blank"></td><td>3</td>
+<td id=""><a href="#">reset</a></td>
+<td>Input</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">logical</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1" id="S5T3">
+<td id="blank"></td><td>4</td>
+<td id=""><a href="#">Structure</a></td>
+<td>Input</td><td class="watchsize" id="20">1 x 25</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1" id="S6T4">
+<td id="blank"></td><td>5</td>
+<td id=""><a href="#">SOSMatrix</a></td>
+<td>Input</td><td class="watchsize" id="22">3 x 6</td>
+<td class="watchclass">double</td>
+<td class="watchcomplex">No</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1" id="S7T5">
+<td id="blank"></td><td>6</td>
+<td id=""><a href="#">ScaleValues</a></td>
+<td>Input</td><td class="watchsize" id="23">4 x 1</td>
+<td class="watchclass">double</td>
+<td class="watchcomplex">No</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 struct" classname="dspcodegen.BiquadFilter" id="S8T6">
+<td class="collapsible"><a class="collapsed" href="#" /></td><td>7</td>
+<td id=""><a href="#">h_filter</a></td>
+<td>Persistent</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">dspcodegen.BiquadFilter</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 struct field" classdef="matlab.system.coder.SystemCore" id="S8T6F1"><td class="collapsible"><a class="collapsed" href="#" /></td><td id="">7.1</td><td id=""></td><td>Inherited</td><td class="watchsize" id="1"></td><td class="watchclass">matlab.system.coder.SystemCore</td></tr><tr class="var type1 S8T6F1 field" classdef="matlab.system.coder.SystemCore" id="S8T6F1F1">
+<td id="blank"></td><td>7.1.1</td>
+<td id="h_filter.isInitialized"><a class="field" id="2" href="#">isInitialized</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">int32</td>
+<td class="watchcomplex">No</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F1 field" classdef="matlab.system.coder.SystemCore" id="S8T6F1F2">
+<td id="blank"></td><td>7.1.2</td>
+<td id="h_filter.isInMATLABSystemBlock"><a class="field" id="2" href="#">isInMATLABSystemBlock</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">logical</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F1 field" classdef="matlab.system.coder.SystemCore" id="S8T6F1F3">
+<td id="blank"></td><td>7.1.3</td>
+<td id="h_filter.sortUseDefault"><a class="field" id="2" href="#">sortUseDefault</a></td>
+<td>Property</td><td class="watchsize" id="1">0 x 0</td>
+<td class="watchclass">double</td>
+<td class="watchcomplex">No</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F1 field struct" classdef="matlab.system.coder.SystemCore" id="S8T6F1F4">
+<td class="collapsible"><a class="collapsed" href="#" /></td><td>7.1.4</td>
+<td id="h_filter.inputDataType"><a class="field" id="2" href="#">inputDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">cell</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F1F4 field" classdef="matlab.system.coder.SystemCore" id="S8T6F1F4F1">
+<td id="blank"></td><td>7.1.4.1</td>
+<td id="h_filter.inputDataType{:}"><a class="field" id="3" href="#">inputDataType{:}</a></td>
+<td>Element</td><td class="watchsize" id="8">1 x 6</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F1 field struct" classdef="matlab.system.coder.SystemCore" id="S8T6F1F5">
+<td class="collapsible"><a class="collapsed" href="#" /></td><td>7.1.5</td>
+<td id="h_filter.inputFixedPointType"><a class="field" id="2" href="#">inputFixedPointType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">cell</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F1F5 field" classdef="matlab.system.coder.SystemCore" id="S8T6F1F5F1">
+<td id="blank"></td><td>7.1.5.1</td>
+<td id="h_filter.inputFixedPointType{:}"><a class="field" id="3" href="#">inputFixedPointType{:}</a></td>
+<td>Element</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Signed</td>
+<td class="wl">16</td>
+<td class="fl">15</td>
+</tr>
+<tr class="var type1 S8T6F1 field struct" classdef="matlab.system.coder.SystemCore" id="S8T6F1F6">
+<td class="collapsible"><a class="collapsed" href="#" /></td><td>7.1.6</td>
+<td id="h_filter.inputSize"><a class="field" id="2" href="#">inputSize</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">cell</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F1F6 field" classdef="matlab.system.coder.SystemCore" id="S8T6F1F6F1">
+<td id="blank"></td><td>7.1.6.1</td>
+<td id="h_filter.inputSize{:}"><a class="field" id="3" href="#">inputSize{:}</a></td>
+<td>Element</td><td class="watchsize" id="4">1 x 2</td>
+<td class="watchclass">double</td>
+<td class="watchcomplex">No</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F1 field" classdef="matlab.system.coder.SystemCore" id="S8T6F1F7">
+<td id="blank"></td><td>7.1.7</td>
+<td id="h_filter.isInputLocked"><a class="field" id="2" href="#">isInputLocked</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">logical</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F1 field" classdef="matlab.system.coder.SystemCore" id="S8T6F1F8">
+<td id="blank"></td><td>7.1.8</td>
+<td id="h_filter.isInputComplex"><a class="field" id="2" href="#">isInputComplex</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">logical</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F1 field" classdef="matlab.system.coder.SystemCore" id="S8T6F1F9">
+<td id="blank"></td><td>7.1.9</td>
+<td id="h_filter.HasTunableProps"><a class="field" id="2" href="#">HasTunableProps</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">logical</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F1 field" classdef="matlab.system.coder.SystemCore" id="S8T6F1F10">
+<td id="blank"></td><td>7.1.10</td>
+<td id="h_filter.HasTunablePropsProcessingCode"><a class="field" id="2" href="#">HasTunablePropsProcessingCode</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">logical</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F1 field" classdef="matlab.system.coder.SystemCore" id="S8T6F1F11">
+<td id="blank"></td><td>7.1.11</td>
+<td id="h_filter.HasVarSizeProcessingCode"><a class="field" id="2" href="#">HasVarSizeProcessingCode</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">logical</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F12">
+<td id="blank"></td><td>7.2</td>
+<td id="h_filter.cSFunObject"><a class="field" id="1" href="#">cSFunObject</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">dsp.BiquadFilter</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field struct" classdef="dspcodegen.BiquadFilter" id="S8T6F13">
+<td class="collapsible"><a class="collapsed" href="#" /></td><td>7.3</td>
+<td id="h_filter.ConstructorArgs"><a class="field" id="1" href="#">ConstructorArgs</a></td>
+<td>Property</td><td class="watchsize" id="8">1 x 6</td>
+<td class="watchclass">cell</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F13 field" classdef="dspcodegen.BiquadFilter" id="S8T6F13F1">
+<td id="blank"></td><td>7.3.1</td>
+<td id="h_filter.ConstructorArgs{1}"><a class="field" id="2" href="#">ConstructorArgs{1}</a></td>
+<td>Element</td><td class="watchsize" id="10">1 x 9</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F13 field" classdef="dspcodegen.BiquadFilter" id="S8T6F13F2">
+<td id="blank"></td><td>7.3.2</td>
+<td id="h_filter.ConstructorArgs{2}"><a class="field" id="2" href="#">ConstructorArgs{2}</a></td>
+<td>Element</td><td class="watchsize" id="20">1 x 25</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F13 field" classdef="dspcodegen.BiquadFilter" id="S8T6F13F3">
+<td id="blank"></td><td>7.3.3</td>
+<td id="h_filter.ConstructorArgs{3}"><a class="field" id="2" href="#">ConstructorArgs{3}</a></td>
+<td>Element</td><td class="watchsize" id="10">1 x 9</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F13 field" classdef="dspcodegen.BiquadFilter" id="S8T6F13F4">
+<td id="blank"></td><td>7.3.4</td>
+<td id="h_filter.ConstructorArgs{4}"><a class="field" id="2" href="#">ConstructorArgs{4}</a></td>
+<td>Element</td><td class="watchsize" id="22">3 x 6</td>
+<td class="watchclass">double</td>
+<td class="watchcomplex">No</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F13 field" classdef="dspcodegen.BiquadFilter" id="S8T6F13F5">
+<td id="blank"></td><td>7.3.5</td>
+<td id="h_filter.ConstructorArgs{5}"><a class="field" id="2" href="#">ConstructorArgs{5}</a></td>
+<td>Element</td><td class="watchsize" id="11">1 x 11</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6F13 field" classdef="dspcodegen.BiquadFilter" id="S8T6F13F6">
+<td id="blank"></td><td>7.3.6</td>
+<td id="h_filter.ConstructorArgs{6}"><a class="field" id="2" href="#">ConstructorArgs{6}</a></td>
+<td>Element</td><td class="watchsize" id="23">4 x 1</td>
+<td class="watchclass">double</td>
+<td class="watchcomplex">No</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F14">
+<td id="blank"></td><td>7.4</td>
+<td id="h_filter.Structure"><a class="field" id="1" href="#">Structure</a></td>
+<td>Property</td><td class="watchsize" id="20">1 x 25</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F15">
+<td id="blank"></td><td>7.5</td>
+<td id="h_filter.SOSMatrixSource"><a class="field" id="1" href="#">SOSMatrixSource</a></td>
+<td>Property</td><td class="watchsize" id="9">1 x 8</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F16">
+<td id="blank"></td><td>7.6</td>
+<td id="h_filter.SOSMatrix"><a class="field" id="1" href="#">SOSMatrix</a></td>
+<td>Property</td><td class="watchsize" id="22">3 x 6</td>
+<td class="watchclass">double</td>
+<td class="watchcomplex">No</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F17">
+<td id="blank"></td><td>7.7</td>
+<td id="h_filter.ScaleValues"><a class="field" id="1" href="#">ScaleValues</a></td>
+<td>Property</td><td class="watchsize" id="23">4 x 1</td>
+<td class="watchclass">double</td>
+<td class="watchcomplex">No</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F18">
+<td id="blank"></td><td>7.8</td>
+<td id="h_filter.InitialConditions"><a class="field" id="1" href="#">InitialConditions</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">double</td>
+<td class="watchcomplex">No</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F19">
+<td id="blank"></td><td>7.9</td>
+<td id="h_filter.NumeratorInitialConditions"><a class="field" id="1" href="#">NumeratorInitialConditions</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">double</td>
+<td class="watchcomplex">No</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F20">
+<td id="blank"></td><td>7.10</td>
+<td id="h_filter.DenominatorInitialConditions"><a class="field" id="1" href="#">DenominatorInitialConditions</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">double</td>
+<td class="watchcomplex">No</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F21">
+<td id="blank"></td><td>7.11</td>
+<td id="h_filter.RoundingMethod"><a class="field" id="1" href="#">RoundingMethod</a></td>
+<td>Property</td><td class="watchsize" id="7">1 x 5</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F22">
+<td id="blank"></td><td>7.12</td>
+<td id="h_filter.OverflowAction"><a class="field" id="1" href="#">OverflowAction</a></td>
+<td>Property</td><td class="watchsize" id="6">1 x 4</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F23">
+<td id="blank"></td><td>7.13</td>
+<td id="h_filter.MultiplicandDataType"><a class="field" id="1" href="#">MultiplicandDataType</a></td>
+<td>Property</td><td class="watchsize" id="14">1 x 14</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F24">
+<td id="blank"></td><td>7.14</td>
+<td id="h_filter.CustomMultiplicandDataType"><a class="field" id="1" href="#">CustomMultiplicandDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Auto</td>
+<td class="wl">32</td>
+<td class="fl">30</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F25">
+<td id="blank"></td><td>7.15</td>
+<td id="h_filter.SectionInputDataType"><a class="field" id="1" href="#">SectionInputDataType</a></td>
+<td>Property</td><td class="watchsize" id="13">1 x 13</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F26">
+<td id="blank"></td><td>7.16</td>
+<td id="h_filter.CustomSectionInputDataType"><a class="field" id="1" href="#">CustomSectionInputDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Auto</td>
+<td class="wl">16</td>
+<td class="fl">15</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F27">
+<td id="blank"></td><td>7.17</td>
+<td id="h_filter.SectionOutputDataType"><a class="field" id="1" href="#">SectionOutputDataType</a></td>
+<td>Property</td><td class="watchsize" id="18">1 x 21</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F28">
+<td id="blank"></td><td>7.18</td>
+<td id="h_filter.CustomSectionOutputDataType"><a class="field" id="1" href="#">CustomSectionOutputDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Auto</td>
+<td class="wl">16</td>
+<td class="fl">15</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F29">
+<td id="blank"></td><td>7.19</td>
+<td id="h_filter.NumeratorCoefficientsDataType"><a class="field" id="1" href="#">NumeratorCoefficientsDataType</a></td>
+<td>Property</td><td class="watchsize" id="20">1 x 25</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F30">
+<td id="blank"></td><td>7.20</td>
+<td id="h_filter.CustomNumeratorCoefficientsDataType"><a class="field" id="1" href="#">CustomNumeratorCoefficientsDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Auto</td>
+<td class="wl">16</td>
+<td class="fl">15</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F31">
+<td id="blank"></td><td>7.21</td>
+<td id="h_filter.OptimizeUnityScaleValues"><a class="field" id="1" href="#">OptimizeUnityScaleValues</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">logical</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F32">
+<td id="blank"></td><td>7.22</td>
+<td id="h_filter.ScaleValuesInputPort"><a class="field" id="1" href="#">ScaleValuesInputPort</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">logical</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F33">
+<td id="blank"></td><td>7.23</td>
+<td id="h_filter.DenominatorCoefficientsDataType"><a class="field" id="1" href="#">DenominatorCoefficientsDataType</a></td>
+<td>Property</td><td class="watchsize" id="20">1 x 25</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F34">
+<td id="blank"></td><td>7.24</td>
+<td id="h_filter.CustomDenominatorCoefficientsDataType"><a class="field" id="1" href="#">CustomDenominatorCoefficientsDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Auto</td>
+<td class="wl">16</td>
+<td class="fl">15</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F35">
+<td id="blank"></td><td>7.25</td>
+<td id="h_filter.ScaleValuesDataType"><a class="field" id="1" href="#">ScaleValuesDataType</a></td>
+<td>Property</td><td class="watchsize" id="20">1 x 25</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F36">
+<td id="blank"></td><td>7.26</td>
+<td id="h_filter.CustomScaleValuesDataType"><a class="field" id="1" href="#">CustomScaleValuesDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Auto</td>
+<td class="wl">16</td>
+<td class="fl">15</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F37">
+<td id="blank"></td><td>7.27</td>
+<td id="h_filter.NumeratorProductDataType"><a class="field" id="1" href="#">NumeratorProductDataType</a></td>
+<td>Property</td><td class="watchsize" id="13">1 x 13</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F38">
+<td id="blank"></td><td>7.28</td>
+<td id="h_filter.CustomNumeratorProductDataType"><a class="field" id="1" href="#">CustomNumeratorProductDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Auto</td>
+<td class="wl">32</td>
+<td class="fl">30</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F39">
+<td id="blank"></td><td>7.29</td>
+<td id="h_filter.DenominatorProductDataType"><a class="field" id="1" href="#">DenominatorProductDataType</a></td>
+<td>Property</td><td class="watchsize" id="13">1 x 13</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F40">
+<td id="blank"></td><td>7.30</td>
+<td id="h_filter.CustomDenominatorProductDataType"><a class="field" id="1" href="#">CustomDenominatorProductDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Auto</td>
+<td class="wl">32</td>
+<td class="fl">30</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F41">
+<td id="blank"></td><td>7.31</td>
+<td id="h_filter.NumeratorAccumulatorDataType"><a class="field" id="1" href="#">NumeratorAccumulatorDataType</a></td>
+<td>Property</td><td class="watchsize" id="15">1 x 15</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F42">
+<td id="blank"></td><td>7.32</td>
+<td id="h_filter.CustomNumeratorAccumulatorDataType"><a class="field" id="1" href="#">CustomNumeratorAccumulatorDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Auto</td>
+<td class="wl">32</td>
+<td class="fl">30</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F43">
+<td id="blank"></td><td>7.33</td>
+<td id="h_filter.DenominatorAccumulatorDataType"><a class="field" id="1" href="#">DenominatorAccumulatorDataType</a></td>
+<td>Property</td><td class="watchsize" id="15">1 x 15</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F44">
+<td id="blank"></td><td>7.34</td>
+<td id="h_filter.CustomDenominatorAccumulatorDataType"><a class="field" id="1" href="#">CustomDenominatorAccumulatorDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Auto</td>
+<td class="wl">32</td>
+<td class="fl">30</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F45">
+<td id="blank"></td><td>7.35</td>
+<td id="h_filter.StateDataType"><a class="field" id="1" href="#">StateDataType</a></td>
+<td>Property</td><td class="watchsize" id="17">1 x 19</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F46">
+<td id="blank"></td><td>7.36</td>
+<td id="h_filter.CustomStateDataType"><a class="field" id="1" href="#">CustomStateDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Auto</td>
+<td class="wl">16</td>
+<td class="fl">15</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F47">
+<td id="blank"></td><td>7.37</td>
+<td id="h_filter.NumeratorStateDataType"><a class="field" id="1" href="#">NumeratorStateDataType</a></td>
+<td>Property</td><td class="watchsize" id="17">1 x 19</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F48">
+<td id="blank"></td><td>7.38</td>
+<td id="h_filter.CustomNumeratorStateDataType"><a class="field" id="1" href="#">CustomNumeratorStateDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Auto</td>
+<td class="wl">16</td>
+<td class="fl">15</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F49">
+<td id="blank"></td><td>7.39</td>
+<td id="h_filter.DenominatorStateDataType"><a class="field" id="1" href="#">DenominatorStateDataType</a></td>
+<td>Property</td><td class="watchsize" id="17">1 x 19</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F50">
+<td id="blank"></td><td>7.40</td>
+<td id="h_filter.CustomDenominatorStateDataType"><a class="field" id="1" href="#">CustomDenominatorStateDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Auto</td>
+<td class="wl">16</td>
+<td class="fl">15</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F51">
+<td id="blank"></td><td>7.41</td>
+<td id="h_filter.OutputDataType"><a class="field" id="1" href="#">OutputDataType</a></td>
+<td>Property</td><td class="watchsize" id="17">1 x 19</td>
+<td class="watchclass">char</td>
+<td class="watchcomplex">-</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+<tr class="var type1 S8T6 field" classdef="dspcodegen.BiquadFilter" id="S8T6F52">
+<td id="blank"></td><td>7.42</td>
+<td id="h_filter.CustomOutputDataType"><a class="field" id="1" href="#">CustomOutputDataType</a></td>
+<td>Property</td><td class="watchsize" id="3">1 x 1</td>
+<td class="watchclass">embedded.numerictype</td>
+<td class="watchcomplex">-</td>
+<td class="signed">Auto</td>
+<td class="wl">16</td>
+<td class="fl">15</td>
+</tr>
+<tr class="var type1" id="S12T30">
+<td id="blank"></td><td>8</td>
+<td id=""><a href="#">frame_in_float</a></td>
+<td>Local</td><td class="watchsize" id="21">1 x 1024</td>
+<td class="watchclass">double</td>
+<td class="watchcomplex">No</td>
+<td class="signed">-</td>
+<td class="wl">-</td>
+<td class="fl">-</td>
+</tr>
+</tbody>
+</table>
+</body>

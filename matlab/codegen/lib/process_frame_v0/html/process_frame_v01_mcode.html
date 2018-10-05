@@ -1,0 +1,32 @@
+<html>
+<body>
+<script src="resources/eml_report_loadable_data.js"></script>
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="1,1" id="srcline1"> 1</a></span><span class="line"><span class="keyword">function</span> <span class="var type1" id="S2T1U3">frame_out</span> = process_frame_v0(<span class="var type1" id="S3T1U6">frame_in</span>, <span class="var type1" id="S4T2U7">reset</span>, <span class="var type2" id="S5T3V1U8">Structure</span>, <span class="var type2" id="S6T4V2U9">SOSMatrix</span>, <span class="var type2" id="S7T5V3U10">ScaleValues</span>) <span class="comment">%#codegen</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,2" id="srcline2"> 2</a></span><span class="line">   </span></span>
+<span class="srcline"><span class="lineno"><a href="1,3" id="srcline3"> 3</a></span><span class="line">   <span class="keyword">persistent</span> <span class="var type1" id="S8T6U12">h_filter</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,4" id="srcline4"> 4</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="1,5" id="srcline5"> 5</a></span><span class="line">   <span class="keyword">if</span> <span class="mxinfo " id="T2:U8">isempty(<span class="var type0" id="S8T0U17">h_filter</span>)</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,6" id="srcline6"> 6</a></span><span class="line">       <span class="mxinfo " id="T6:U9"><span class="var type1" id="S8T6U20">h_filter</span> = dsp.BiquadFilter(<span class="keyword">...</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,7" id="srcline7"> 7</a></span><span class="line">           <span class="string">'Structure'</span>,<span class="var type1" id="S5T3U26">Structure</span>,<span class="keyword">...</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,8" id="srcline8"> 8</a></span><span class="line">           <span class="string">'SOSMatrix'</span>,<span class="var type1" id="S6T4U28">SOSMatrix</span>,<span class="keyword">...</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,9" id="srcline9"> 9</a></span><span class="line">           <span class="string">'ScaleValues'</span>,<span class="var type1" id="S7T5U30">ScaleValues</span>)</span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,10" id="srcline10">10</a></span><span class="line">   <span class="keyword">end</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,11" id="srcline11">11</a></span><span class="line">   </span></span>
+<span class="srcline"><span class="lineno"><a href="1,12" id="srcline12">12</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="1,13" id="srcline13">13</a></span><span class="line">   </span></span>
+<span class="srcline"><span class="lineno"><a href="1,14" id="srcline14">14</a></span><span class="line">   <span class="keyword">if</span> <span class="var type1" id="S4T2U33">reset</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,15" id="srcline15">15</a></span><span class="line">       <span class="var type1" id="S8T6U36">h_filter</span>.reset;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,16" id="srcline16">16</a></span><span class="line">       <span class="mxinfo " id="T1:U16"><span class="var type1" id="S2T1U40">frame_out</span> = <span class="mxinfo " id="T1:U18">fi(<span class="var type1" id="S3T1U43">frame_in</span>, 1, 32, 28, <span class="string">'OverflowAction'</span>, <span class="string">'Wrap'</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,17" id="srcline17">17</a></span><span class="line">   <span class="keyword">else</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,18" id="srcline18">18</a></span><span class="line">       <span class="comment">% convert to floating</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,19" id="srcline19">19</a></span><span class="line">       <span class="mxinfo " id="T30:U20"><span class="var type1" id="S12T30U52">frame_in_float</span> = <span class="mxinfo " id="T30:U22">double(<span class="var type1" id="S3T1U55">frame_in</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,20" id="srcline20">20</a></span><span class="line">  </span></span>
+<span class="srcline"><span class="lineno"><a href="1,21" id="srcline21">21</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="1,22" id="srcline22">22</a></span><span class="line">       <span class="comment">% step filter, output quantized</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,23" id="srcline23">23</a></span><span class="line">       <span class="mxinfo " id="T1:U24"><span class="var type1" id="S2T1U58">frame_out</span> = <span class="mxinfo " id="T1:U26">fi(<span class="mxinfo " id="T30:U27">step(<span class="var type1" id="S8T6U63">h_filter</span>,<span class="var type1" id="S12T30U64">frame_in_float</span>)</span>, 1, 32, 28, <span class="string">'OverflowAction'</span>, <span class="string">'Wrap'</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,24" id="srcline24">24</a></span><span class="line">   <span class="keyword">end</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,25" id="srcline25">25</a></span><span class="line"><span class="keyword">end</span></span></span>
+</pre>
+</body>
+</html>
