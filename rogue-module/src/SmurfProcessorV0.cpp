@@ -1,13 +1,13 @@
 /**
  *-----------------------------------------------------------------------------
- * Title         : SLAC Register Protocol (SRP) SmurfProcessorV0
+ * Title         : SmurfProcessorV0
  * ----------------------------------------------------------------------------
  * File          : SmurfProcessorV0.cpp
- * Author        : Ryan Herbst <rherbst@slac.stanford.edu>
- * Created       : 02/02/2018
+ * Author        : Mitch D'Ewart <mdewart@slac.stanford.edu>
+ * Created       : 10/01/2018
  *-----------------------------------------------------------------------------
  * Description :
- *    AXI Stream FIFO
+ *    SMuRF stream processor - performs filtering and downsampling
  *-----------------------------------------------------------------------------
  * This file is part of the rogue software platform. It is subject to 
  * the license terms in the LICENSE.txt file found in the top-level directory 
@@ -123,10 +123,9 @@ void SmurfProcessorV0::processFrame( ris::FramePtr frame ) {
    std::copy(&input[0], &input[headerSize], output);
 
 // process frame:
-//   int16 -> double
-//   unwrap
+//   int32 -> double
 //   filter (6 order butterworth)
-//   quantize back to int16, wrap
+//   quantize back to int32, wrap
    process_frame_v0(&process_frame_v0StackDataGlobal, (const int32_t *) &input[blockOffset0], 0, (int32_t *) &output[blockOffset0]);
 
    bufferToFrame(&output[0], frame);
