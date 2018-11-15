@@ -135,11 +135,11 @@ void SmurfFrameCounter::runThread() {
             time = std::time(0);
             now  = std::localtime(&time);
             std::cout << (now->tm_year + 1900) << '-' << (now->tm_mon + 1) << '-' << now->tm_mday << "  ";
-            std::cout << (now->tm_hour) << ':' << (now->tm_min) << ':' << (now->tm_sec) << " --  ";
-            std::cout << "Got frame number " << frameNumber << ", should've got " << prevFrameNumber << "\n";
+            std::cout << (now->tm_hour) << ':' << (now->tm_min) << ':' << (now->tm_sec) << "   --  ";
+            std::cout << "Got frame number " << frameNumber << ", should've got " << prevFrameNumber;
+            std::cout << ".  Missing " << frameNumber-prevFrameNumber+1 << " frames.\n";
 
-            std::cout << "Previous time: " << prevSeconds << ":" << prevNanoSeconds << "\n";
-            std::cout << "This time:     " << seconds     << ":" << nanoSeconds     << "\n";
+            std::cout << "Time difference s:ns  --  " << seconds-prevSeconds << ":" << nanoSeconds-prevNanoSeconds << "\n";
          }
       }
    } catch (boost::thread_interrupted&) { }
