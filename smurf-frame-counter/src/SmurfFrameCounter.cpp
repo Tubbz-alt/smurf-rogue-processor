@@ -152,6 +152,8 @@ void SmurfFrameCounter::runThread() {
             std::cout << "Time difference s:ns  --  " << diffSeconds << ":" << diffNanoSeconds << "\n";
          }
          else if( (diffSeconds != 0) || (diffNanoSeconds >  500000) ) { //4kHz smurf rate 250000ns/frame
+            std::cout << (now->tm_year + 1900) << '-' << (now->tm_mon + 1) << '-' << now->tm_mday << "  ";
+            std::cout << (now->tm_hour) << ':' << (now->tm_min) << ':' << (now->tm_sec) << "   --  ";
             std::cout << "Missed trigger - time difference s:ns  --  " << diffSeconds << ":" << diffNanoSeconds << "\n";
          }
       }
