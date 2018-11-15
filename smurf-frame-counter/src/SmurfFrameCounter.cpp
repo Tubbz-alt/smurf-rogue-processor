@@ -111,6 +111,8 @@ void SmurfFrameCounter::runThread() {
    uint32_t nanoSeconds;
    uint32_t prevSeconds;
    uint32_t seconds;
+   int32_t diffNanoSeconds;
+   int32_t diffSeconds;
    std::time_t time;
    std::tm* now;
 
@@ -130,6 +132,14 @@ void SmurfFrameCounter::runThread() {
          prevSeconds     = seconds; 
          seconds         = *((uint32_t *)(input + secondsOffset)); 
 
+         diffNanoSeconds = nanoSeconds - prevNanoSeconds;
+         diffSeconds     = seconds - prevSeconds;
+
+         if (diffNanoSeconds < 0 ) {
+             diffNanoSeconds += 1e9;
+             diffSeconds--;
+         }
+
          // frame should increment by 1
          if( ++prevFrameNumber != frameNumber ) {
             time = std::time(0);
@@ -139,7 +149,10 @@ void SmurfFrameCounter::runThread() {
             std::cout << "Got frame number " << frameNumber << ", should've got " << prevFrameNumber;
             std::cout << ".  Missing " << frameNumber-prevFrameNumber+1 << " frames.\n";
 
-            std::cout << "Time difference s:ns  --  " << seconds-prevSeconds << ":" << nanoSeconds-prevNanoSeconds << "\n";
+            std::cout << "Time difference s:ns  --  " << diffSeconds << ":" << diffNanoSeconds << "\n";
+         }
+         else if( (diffSeconds != 0) || (diffNanoSeconds >  500000) ) { //4kHz smurf rate 250000ns/frame
+            std::cout << "Missed trigger - time difference s:ns  --  " << diffSeconds << ":" << diffNanoSeconds << "\n";
          }
       }
    } catch (boost::thread_interrupted&) { }
